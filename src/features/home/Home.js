@@ -1,10 +1,19 @@
 import React from 'react';
-import { Text } from 'grommet';
+import { Box } from 'grommet';
 
-export default class Home extends React.Component {
-    render() {
-        return (
-            <Text>Hello world</Text>
-        );
-    }
+// components
+import Header from '../header/Header.js';
+import Body from '../body/Body.js';
+import Footer from '../footer/Footer.js';
+ 
+const Home = () => {
+    return (
+        <Box>
+            <Header />
+            <Body />
+            <Footer />
+        </Box>
+    );
 }
+
+export default Home;
