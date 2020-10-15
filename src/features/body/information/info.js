@@ -11,6 +11,8 @@ const Info = (props) => {
         <Box 
             border={{color: `${color}`, size: "small", side: "top"}} 
             height="small" width="33%">
+            <Box></Box>
+            <Box></Box>
             <Text>My personal information or not but i think that width is fiting content</Text>
         </Box>
     );
