@@ -4,9 +4,14 @@ import { Grommet } from 'grommet';
 // app theme
 import Theme from './Theme.js';
 
+// components
+import Home from './features/home/Home.js';
+
 function App() {
   return (
-    <Grommet theme={Theme} full></Grommet>
+    <Grommet theme={Theme} full>
+      <Home />
+    </Grommet>
   );
 }
 
