@@ -8,7 +8,7 @@ import Footer from '../footer/Footer.js';
  
 const Home = () => {
     return (
-        <Box>
+        <Box className="home">
             <Header />
             <Body />
             <Footer />

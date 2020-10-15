@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grommet } from 'grommet';
+import '../src/App.css';
 
 // app theme
 import Theme from './Theme.js';

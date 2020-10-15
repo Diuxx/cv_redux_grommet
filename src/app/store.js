@@ -3,6 +3,9 @@ import counterReducer from '../features/counter/counterSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    counter: counterReducer
   },
+  informations: {
+    perso: { age: "24 ans", mail: "nicolasmarmot@gmail.com" }
+  }
 });

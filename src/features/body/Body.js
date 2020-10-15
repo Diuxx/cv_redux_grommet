@@ -3,13 +3,13 @@ import { Box } from 'grommet';
 
 // composants
 import Info from './information/info.js';
+import Comp from './competence/comp.js';
 
 const Body = () => {
     return (
         <Box direction="row-responsive" gap="small" pad="small">
-            <Info color="#FF5733" />
-            <Info color="#2ECC71" />
-            <Info color="#3498DB" />
+            <Info color="light-red" />
+            <Comp color="light-blue" />
         </Box>
     );
 }
