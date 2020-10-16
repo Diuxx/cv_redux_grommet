@@ -1,16 +1,27 @@
 import React from 'react';
-import { Box } from 'grommet';
+import { Box, ResponsiveContext } from 'grommet';
 
 // composants
 import Info from './information/info.js';
 import Comp from './competence/comp.js';
 
 const Body = () => {
+    const size = React.useContext(ResponsiveContext);
+
     return (
-        <Box direction="row-responsive" gap="small" pad="small">
-            <Info color="light-red" />
-            <Comp color="light-blue" />
-        </Box>
+        <>
+            {size === 'small' ?
+                <Box direction="column" gap="small" pad="small">
+                    <Info color="light-red" size={size} />
+                    <Comp color="light-blue" size={size} />
+                </Box>
+            :
+                <Box direction="row-responsive" gap="small" pad="small">
+                    <Info color="light-red" size={size} />
+                    <Comp color="light-blue" size={size} />
+                </Box>
+            }
+        </>
     );
 }
 
