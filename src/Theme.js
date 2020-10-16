@@ -6,9 +6,11 @@ const Theme = {
       },
       colors: {
         'grey-light': '#f2f2f2',
+        'gery-light-1': '#A6ACAF',
         'light-red': '#FF5733',
         'light-green': '#2ECC71', 
-        'light-blue': '#3498DB'
+        'light-blue': '#3498DB',
+        'light-yellow': '#F4D03F'
       },
       meter: {
         extend: {
