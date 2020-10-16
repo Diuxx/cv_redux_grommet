@@ -1,6 +1,10 @@
 
-
 /* idk how i can do it better */
 .StyledMeter-nsxarx-0 {
     min-width: 32px !important;
+}
+
+.info span {
+    width: 70%;
+    overflow-wrap: break-word;
 }
