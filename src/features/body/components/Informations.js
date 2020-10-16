@@ -3,7 +3,7 @@ import { Box, Text } from 'grommet';
 import { Gift, Car, Mail, Location } from 'grommet-icons';
 
 
-const Info = (props) => {
+const Informations = (props) => {
     const [color, setColor] = React.useState(null);
     const [size, setSize] = React.useState(null);
     React.useEffect(() => {
@@ -51,16 +51,16 @@ const Info = (props) => {
                 </Box>
                 :
                 <Box className="info"
-                border={{color: `${color}`, size: 'small', side: "top"}} 
-                height="small" width="20%"
-                gap="medium"
-                direction="column"
-                pad="small">
+                     border={{color: `${color}`, size: 'small', side: "top"}} 
+                     height="small" width="20%"
+                     gap="medium"
+                     direction="column"
+                     pad="small">
                     <Box responsive="true"
-                        direction="row-responsive" 
-                        gap="large"
-                        alignContent="start"
-                        align="start">
+                         direction="row-responsive" 
+                         gap="large"
+                         alignContent="start"
+                         align="start">
                         <Gift width="16px" height="16px" />
                         <Text>26 ans</Text>
                     </Box>
@@ -94,4 +94,4 @@ const Info = (props) => {
     );
 }
 
-export default Info;
+export default Informations;

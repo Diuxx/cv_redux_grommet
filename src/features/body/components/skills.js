@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Text, Meter, Heading } from 'grommet';
 
-const Comp = (props) => {
+const Skills = (props) => {
     const [color, setColor] = React.useState(null);
     const [size, setSize] = React.useState(null);
     React.useEffect(() => {
@@ -133,4 +133,4 @@ const Comp = (props) => {
     );
 }
 
-export default Comp;
+export default Skills;

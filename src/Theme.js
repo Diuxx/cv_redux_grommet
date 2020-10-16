@@ -10,7 +10,8 @@ const Theme = {
         'light-red': '#FF5733',
         'light-green': '#2ECC71', 
         'light-blue': '#3498DB',
-        'light-yellow': '#F4D03F'
+        'light-yellow': '#F4D03F',
+        'light-black': '#2C3E50 ',
       },
       meter: {
         extend: {

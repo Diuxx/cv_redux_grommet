@@ -2,8 +2,9 @@ import React from 'react';
 import { Box, ResponsiveContext } from 'grommet';
 
 // composants
-import Info from './information/info.js';
-import Comp from './competence/comp.js';
+import Informations from './components/Informations.js';
+import Skills from './components/skills.js';
+import Languages from './components/Langages.js';
 
 const Body = () => {
     const size = React.useContext(ResponsiveContext);
@@ -12,13 +13,15 @@ const Body = () => {
         <>
             {size === 'small' ?
                 <Box direction="column" gap="small" pad="small">
-                    <Info color="light-red" size={size} />
-                    <Comp color="light-blue" size={size} />
+                    <Informations color="light-red" size={size} />
+                    <Skills color="light-blue" size={size} />
+                    <Languages color="light-green" size={size} />
                 </Box>
             :
                 <Box direction="row-responsive" gap="small" pad="small">
-                    <Info color="light-red" size={size} />
-                    <Comp color="light-blue" size={size} />
+                    <Informations color="light-red" size={size} />
+                    <Skills color="light-blue" size={size} />
+                    <Languages color="light-green" size={size} />
                 </Box>
             }
         </>
