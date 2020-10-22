@@ -1,17 +1,25 @@
 import React from 'react';
-import { Box } from 'grommet';
+import { Box, Heading, List, Anchor, ResponsiveContext } from 'grommet';
 
-// components
-import Header from '../header/Header.js';
-import Body from '../body/Body.js';
-import Footer from '../footer/Footer.js';
- 
 const Home = () => {
+    const size = React.useContext(ResponsiveContext);
+
+    const route = [
+        { name: <Anchor href="/" label="Home" /> },
+        { name: <Anchor href="/about" label="About" /> },
+        { name: <Anchor className="catch-me" href="/gg" label="CatchMe" /> }
+    ];
+
     return (
-        <Box className="home">
-            <Header />
-            <Body />
-            <Footer />
+        <Box fill className="home" align="center" justify="center" direction="column">
+            <Heading className="home-title" color="light-grey-2">Redux et grommet website</Heading>
+            <Box direction="row" gap="medium">
+                {size === 'small' ?
+                    <List className="home-menu-small" primaryKey="name" data={route}></List>
+                :
+                    <List className="home-menu" primaryKey="name" data={route}></List>
+                }
+            </Box>
         </Box>
     );
 }

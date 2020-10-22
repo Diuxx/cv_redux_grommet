@@ -6,12 +6,26 @@ import '../src/App.css';
 import Theme from './Theme.js';
 
 // components
-import Home from './features/home/Home.js';
+import Home from './features/home/home.js';
+import About from './features/about/about.js';
+
+// routing
+import {
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
     <Grommet theme={Theme} full>
-      <Home />
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </Grommet>
   );
 }

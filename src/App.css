@@ -8,3 +8,33 @@
     width: 70%;
     overflow-wrap: break-word;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    .home-title  {
+        /*animation: ;*/
+        animation: App-title-float infinite 3s ease-in-out;
+    }    
+}
+
+.home-menu li {
+    display: inline;
+    border: none;
+}
+
+.home-menu-small li {
+    border: none;
+}
+
+/* animations */
+
+@keyframes App-title-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
