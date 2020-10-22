@@ -4,7 +4,7 @@
     min-width: 32px !important;
 }
 
-.info span {
+.info span, .network a {
     width: 70%;
     overflow-wrap: break-word;
 }
@@ -23,6 +23,10 @@
 
 .home-menu-small li {
     border: none;
+}
+
+h4 {
+  max-width: fit-content !important;
 }
 
 /* animations */

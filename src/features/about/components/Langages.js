@@ -24,23 +24,21 @@ const Languages = (props) => {
                             Langues
                         </Heading>
                     </Box>
-                    <Box responsive="true"
-                            direction="column"
-                            alignContent="start"
-                            align="start">
+                    <Box direction="column"
+                         alignContent="start"
+                         align="start">
                         <Heading margin="none" level="4" color="light-black">
                             Anglais - professionnelle
                         </Heading>
-                        <Text weight="bold">TOEIC EN COUR D'ACQUISITION</Text>
+                        <Text>TOEIC EN COUR D'ACQUISITION</Text>
                     </Box>
-                    <Box responsive="true"
-                            direction="column"
-                            alignContent="start"
-                            align="start">
+                    <Box direction="column"
+                         alignContent="start"
+                         align="start">
                         <Heading margin="none" level="4" color="light-black">
                             Coréen
                         </Heading>
-                        <Text weight="bold">NIVEAU 0 EN COUR D'ACQUISITION</Text>
+                        <Text>NIVEAU 0 EN COUR D'ACQUISITION</Text>
                     </Box>
                 </Box> 
                 :
@@ -56,23 +54,25 @@ const Languages = (props) => {
                             Langues
                         </Heading>
                     </Box>
-                    <Box responsive="true"
-                            direction="column"
-                            alignContent="start"
-                            align="start">
+                    <Box direction="column"
+                         alignContent="start"
+                         align="start">
                         <Heading margin="none" level="4" color="light-black">
                             Anglais - professionnelle
                         </Heading>
-                        <Text weight="bold">TOEIC EN COUR D'ACQUISITION</Text>
+                        <Text>
+                            Toeic en cour d'acquisition
+                        </Text>
                     </Box>
-                    <Box responsive="true"
-                            direction="column"
-                            alignContent="start"
-                            align="start">
+                    <Box direction="column"
+                         alignContent="start"
+                         align="start">
                         <Heading margin="none" level="4" color="light-black">
                             Coréen
                         </Heading>
-                        <Text weight="bold">NIVEAU 0 EN COUR D'ACQUISITION</Text>
+                        <Text>
+                            Niveau 0 en cour d'acquisition    
+                        </Text>
                     </Box>
                 </Box>        
             }

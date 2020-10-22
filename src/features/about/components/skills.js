@@ -41,9 +41,9 @@ const Skills = (props) => {
                         alignSelf="center"
                         type="circle"
                         values={[{
-                            color: "light-green",
-                            value: `${element.purcent}`,
-                            label: `${element.name}`
+                            color: 'light-green',
+                            value: Number(element.purcent),
+                            label: element.name
                         }]}
                     />
                 </Box>
@@ -60,8 +60,8 @@ const Skills = (props) => {
                         type="circle"
                         values={[{
                             color: "light-yellow",
-                            value: `${element.purcent}`,
-                            label: `${element.name}`
+                            value: Number(element.purcent),
+                            label: element.name
                         }]}
                     />
                 </Box>
@@ -78,8 +78,8 @@ const Skills = (props) => {
                         type="circle"
                         values={[{
                             color: "light-blue",
-                            value: `${element.purcent}`,
-                            label: `${element.name}`
+                            value: Number(element.purcent),
+                            label: element.name
                         }]}
                     />
                 </Box>
@@ -94,7 +94,6 @@ const Skills = (props) => {
                      height="small" width="full"
                      gap="small"
                      direction="column"
-                     wrap="true"
                      pad="small">
                     <Box width="full">
                         <Heading margin="none" level="3" color="gery-light-1">Compétences</Heading>
@@ -111,11 +110,10 @@ const Skills = (props) => {
                 </Box>             
             :
                 <Box border={{color:`${color}`, size:"small", side: "top"}}
-                    height="small" width="60%"
-                    gap="small"
-                    direction="column"
-                    wrap="true"
-                    pad="small">
+                     height="small" width="60%"
+                     gap="small"
+                     direction="column"
+                     pad="small">
                     <Box width="full">
                         <Heading margin="none" level="3" color="gery-light-1">Compétences</Heading>
                     </Box>

@@ -28,10 +28,9 @@ const SocialNetwork = (props) => {
             {size === 'small' ?
                 <Box>test</Box>
                 :
-                <Box className="exp"
+                <Box full className="network"
                      border={{color: `${color}`, size: 'small', side: 'top'}}
                      height="small"
-                     width="20%"
                      direction="column"
                      gap="small"
                      pad="small">
@@ -41,7 +40,7 @@ const SocialNetwork = (props) => {
                     {
                         network.map((elem, i) => {
                             return (
-                                <Box direction="row" gap='small'>
+                                <Box key={i} direction="row" gap='small'>
                                     {elem.icon} {elem.url}
                                 </Box>
                             )

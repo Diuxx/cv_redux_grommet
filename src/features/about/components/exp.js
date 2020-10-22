@@ -43,7 +43,7 @@ const Exp = (props) => {
                                 <Heading margin="none" level="4" color="">
                                     {elem.title}
                                 </Heading>
-                                <Text color="">{elem.company}</Text>                  
+                                <Text color="light-grey-2">{elem.company}</Text>                  
                             </Box>
                             <Box full direction="row">
                                 <Text>
@@ -67,7 +67,7 @@ const Exp = (props) => {
             {size === 'small' ?
                 <Box full className="exp"
                      border={{color: `${color}`, size: 'small', side: 'top'}}
-                     height="large"
+                     height="fit-content"
                      direction="column"
                      gap="small"
                      pad="small">
@@ -77,10 +77,9 @@ const Exp = (props) => {
                     {view}
                 </Box>
                 :
-                <Box className="exp"
+                <Box full className="exp"
                      border={{color: `${color}`, size: 'small', side: 'top'}}
                      height="fit-content"
-                     width="80%"
                      direction="column"
                      gap="small"
                      pad="small">

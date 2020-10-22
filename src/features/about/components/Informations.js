@@ -18,35 +18,27 @@ const Informations = (props) => {
                 border={{color: `${color}`, size: 'small', side: "top"}} 
                 height="small" width="full"
                 gap="small"
-                direction="column"
+                direction="row"
                 pad="small">
-                    <Box direction="row" 
-                        gap="large"
-                        alignContent="around"
-                        align="start">
-                        <Gift width="16px" height="16px" />
-                        <Text>26 ans</Text>
+                    <Box width="50%" direction="column" gap="large" justify="center">
+                        <Box direction="row" justify="center" gap="small">
+                            <Gift width="16px" height="16px" />
+                            <Text>26 ans</Text>
+                        </Box>
+                        <Box direction="row" justify="center" gap="small">
+                            <Car width="16px" height="16px" />
+                            <Text>Permis B.</Text>
+                        </Box>
                     </Box>
-                    <Box direction="row" 
-                        gap="large"
-                        alignContent="start"
-                        align="start">
-                        <Car width="16px" height="16px" />
-                        <Text>Permis B.</Text>
-                    </Box>
-                    <Box direction="row" 
-                        gap="large"
-                        alignContent="start"
-                        align="start">
-                        <Mail width="16px" height="16px"/>
-                        <Text className="mail">nicolasmarmot@gmail.com</Text>
-                    </Box>
-                    <Box direction="row" 
-                        gap="large"
-                        alignContent="start"
-                        align="start">
-                        <Location width="16px" height="16px"/>
-                        <Text>Blagnac, France</Text>
+                    <Box width="50%" direction="column" gap="large" justify="center">
+                        <Box direction="row" justify="center" gap="small">
+                            <Mail width="16px" height="16px"/>
+                            <Text className="mail">nicolasmarmot@gmail.com</Text>
+                        </Box>
+                        <Box direction="row" justify="center" gap="small">
+                            <Location width="16px" height="16px"/>
+                            <Text>Blagnac, France</Text>
+                        </Box>
                     </Box>
                 </Box>
                 :
@@ -56,15 +48,14 @@ const Informations = (props) => {
                      gap="medium"
                      direction="column"
                      pad="small">
-                    <Box responsive="true"
-                         direction="row-responsive" 
+                    <Box direction="row-responsive" 
                          gap="large"
                          alignContent="start"
                          align="start">
                         <Gift width="16px" height="16px" />
                         <Text>26 ans</Text>
                     </Box>
-                    <Box responsive="true"
+                    <Box 
                         direction="row-responsive" 
                         gap="large"
                         alignContent="start"
@@ -72,7 +63,7 @@ const Informations = (props) => {
                         <Car width="16px" height="16px" />
                         <Text>Permis B.</Text>
                     </Box>
-                    <Box responsive="true"
+                    <Box 
                         direction="row-responsive" 
                         gap="large"
                         alignContent="start"
@@ -80,7 +71,7 @@ const Informations = (props) => {
                         <Mail width="16px" height="16px"/>
                         <Text className="mail">nicolasmarmot@gmail.com</Text>
                     </Box>
-                    <Box responsive="true"
+                    <Box 
                         direction="row-responsive" 
                         gap="large"
                         alignContent="start"

@@ -16,10 +16,15 @@ const Theme = {
         'light-purple': '#A569BD',
         'light-orange': '#F5B041'
       },
-      meter: {
+    meter: {
         extend: {
           'min-width': '32px',
           'min-height': '32px'
+        }
+      },
+      breakpoints: {
+        "small": {
+          "value": 1290
         }
       }
     }
