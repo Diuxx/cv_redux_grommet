@@ -29,6 +29,26 @@ h4 {
   max-width: fit-content !important;
 }
 
+.translate {
+  position: fixed ;
+}
+
+.translate button {
+  border: none;
+  border-radius: 2px;
+  background-color: #B2BABB;
+}
+
+.translate button:hover {
+  border: none;
+  background-color: #A6ACAF;
+  color: white;
+}
+
+.translate button:focus {
+  box-shadow: none;
+}
+
 /* animations */
 
 @keyframes App-title-float {
