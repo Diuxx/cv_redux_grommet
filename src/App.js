@@ -17,7 +17,7 @@ import {
   Route
 } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <Grommet theme={Theme} full>
       <Switch>

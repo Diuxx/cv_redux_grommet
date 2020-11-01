@@ -12,8 +12,6 @@ import Formation from './components/formation.js';
 const Body = () => {
     const size = React.useContext(ResponsiveContext);
 
-    console.log(size) ;
-
     return (
         <>
             {size === 'small' ?

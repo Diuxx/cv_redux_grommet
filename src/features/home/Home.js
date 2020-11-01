@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Box, Heading, List, Anchor, ResponsiveContext, Button } from 'grommet';
 
 // translate
-import { withTranslate, IntlActions, useTranslate } from 'react-redux-multilingual'
-
+import { withTranslate } from 'react-redux-multilingual'
 
 const Home = ({ translate }) => {
     const size = React.useContext(ResponsiveContext);
@@ -15,6 +14,11 @@ const Home = ({ translate }) => {
         { name: <Anchor className="catch-me" href="/gg" label="CatchMe" /> }
     ];
 
+    // functions
+    const handleClickLang = useCallback((lang) => {
+        console.log(lang) ;
+    });
+
     return (
         <>
             <Box className="translate"
@@ -22,8 +26,8 @@ const Home = ({ translate }) => {
                  width="fit-content"
                  height="fit-content"
                  gap="small">
-                <Button color="light-grey-2" label="FR" />
-                <Button color="light-grey-2" label="EN" />
+                <Button color="light-grey-2" onClick={handleClickLang('fr')} label="FR" />
+                <Button color="light-grey-2" onClick={handleClickLang('en')} label="EN" />
             </Box>
             <Box fill className="home" align="center" justify="center" direction="column">
                 <Heading className="home-title" color="light-grey-2">{ translate('app_title') }</Heading>
